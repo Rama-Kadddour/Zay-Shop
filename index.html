@@ -5,51 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zay Shop eCommerce</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
         a{
             text-decoration: none;
         }
-        .navbar-icon-top .nav-link > .fa {
-            position: relative;
-            width: 100px;
-            font-size: 24px;
+        body {
+            font-family: 'Cairo', sans-serif !important;
         }
-
-        .navbar-icon-top .nav-link > .fa > .badge {
-            font-size: 0.75rem;
-            position: absolute;
-            right: 0;
-            font-family: sans-serif;
+        .nav-item{
+            font-weight: 400
         }
-
-        .navbar-icon-top .nav-link {
-            text-align: center;
-            display: table-cell;
-            height: 70px;
-            vertical-align: middle;
-            padding-top: 0;
-            padding-bottom: 0;
+        @media (max-width: 150) {
+            .navbar-fixed-top{
+                margin-top: 0 !important;
+            }
+            .res{
+                width: 100px ;
+            }
         }
-
-        .navbar-icon-top .nav-link > .fa {
-            display: block;
-            width: 48px;
-            margin: 2px auto 4px auto;
-            top: 0;
-            line-height: 24px;
+        @media (max-width: 250) {
+            .res{
+                width: 200px ;
+            }
         }
-
-        .navbar-icon-top .navbar-nav .nav-link > .fa > .badge {
-            top: -7px;
+        @media (max-width: 500) {
+            .res{
+                width: 300px ;
+            }
         }
-
+        @media (max-width: 750) {
+            .res{
+                width: 400px ;
+            }
+        }
+        @media (max-width: 992) {
+            .res{
+                width: 500px ;
+            }
+            .ex-nav{
+                height: 800px;
+            }
+            .coll{
+                display: block;
+            }
+            .n-nicon{
+                margin-left: 200px;
+                display: block;
+            }
+            .n-icon{
+                display: flex !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="hide border-bottom ps-3 py-2" style="background-color: #212934;">
+    <div class="navbar-expand-lg d-none d-lg-block border-bottom ps-3 py-2" style="background-color: #212934;">
         <div class="container">
         <div class="row pb-1" style="font-size: 12px;">
             <div class="col">
@@ -70,52 +84,95 @@
         </div>
     </div>
     
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container">
-        <a class="" href="#"><img src="assets/img/apple-icon.png" style="width: 80px;" alt=""></a>
-    
-            <ul class="hide navbar-nav ms-auto ps-4 " style="font-weight: lighter; font-size: 18px;">
-            <li class="nav-item">
-                <a class="nav-link mx-5" href="#" style="color: black;">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-5" href="#" style="color: black;">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-5" href="#" style="color: black;">Shop</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link mx-5" href="#" style="color: black;">Contact</a>
-            </li>
-            </ul>
-            <ul class="hide navbar navbar-icon-top navbar-nav ms-auto mb-2">
-            <li class="nav-item">
-                <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search" style="color: black;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-4" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="fa" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                </svg>
-                <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
-                </a>
-            </li>
-            <li>
-                <a href="#" style="color: black;" class="fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                </svg>
-                <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
-                </a>
-            </li>
-            </ul>
-        </div>
+    <nav class="ex-nav navbar navbar-expand-lg bg-white coll ms-md-5">
+        <div class="container-fluid">
+            <div class="d-flex ">
+                <a class="ms-lg-5 ms-md-5" href="#"><img class="float-start me-5" src="assets/img/apple-icon.png" style="height: 80px; width: 83px;" alt=""></a>
+                <div class="d-flex navbar-fixed-top ms-5" >
+                    <button type="button"  style="float: right;" class="navbar-right  navbar-toggler d-lg-none d-md-block my-1 ms-md-5" data-bs-toggle="collapse" data-bs-target="#lightnav" aria-controls="lightnav">
+                        <svg width="27px" height="27px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#5d5b5b" stroke="#5d5b5b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z" fill="#5d5b5b"></path></g></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-collapse collapse" id="lightnav">
+                <ul class="navbar-nav mx-lg-auto n-nicon" style=" font-size: 18px;">
+                    <li class="nav-item">
+                        <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Contact</a>
+                    </li>
+                </ul>
+                <div class="">
+                    <ul class="navbar navbar-nav mb-2 n-icon me-5 d-flex flex-row ">
+                        <li class="nav-item d-none d-lg-block">
+                            <a class="input-group mw-100" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color: black;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-4" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="row pb-5">
+                                    <div class="col offset-2">
+                                        <button type="button" class="btn-close mt-4 ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-12 offset-3">
+                                        <div class="modal-body w-50">
+                                            <form class="input-group ">
+                                                <input type="text"  class="res form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
+                                                <button class="btn btn-success" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                    </svg>
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <li class="d-lg-none d-md-block">
+                            <form class="input-group" style="width: 100%;">
+                                <input type="text" style="width: 85px;" class="res form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
+                                <button class="btn btn-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" class=" fa" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                            </svg>
+                            <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
+                            </a>
+                        </li>
+                        <li class="nav-item me-5">
+                            <a href="#" style="color: black;" class=" fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                            </svg>
+                            <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </nav>
-
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script
 </body>
 </html>
