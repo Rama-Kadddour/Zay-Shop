@@ -23,29 +23,8 @@
             .navbar-fixed-top{
                 margin-top: 0 !important;
             }
-            .res{
-                width: 100px ;
-            }
-        }
-        @media (max-width: 250) {
-            .res{
-                width: 200px ;
-            }
-        }
-        @media (max-width: 500) {
-            .res{
-                width: 300px ;
-            }
-        }
-        @media (max-width: 750) {
-            .res{
-                width: 400px ;
-            }
         }
         @media (max-width: 992) {
-            .res{
-                width: 500px ;
-            }
             .ex-nav{
                 height: 800px;
             }
@@ -84,17 +63,19 @@
         </div>
     </div>
     
-    <nav class="ex-nav navbar navbar-expand-lg bg-white coll ms-md-5">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-between">
-                <a class="ms-lg-5 ms-md-5" href="#"><img class="float-start me-5" src="assets/img/apple-icon.png" style="height: 80px; width: 83px;" alt=""></a>
-                <div class="d-flex navbar-fixed-top ms-5" >
-                    <button class="navbar-toggler float-end" type="button" data-bs-toggle="collapse" data-bs-target="#lightnav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container">
+            <div class="">
+                <div class="d-flex justify-content-between w-100">
+                    <a class="ms-lg-5 ms-md-5" href="#"><img class="float-start me-5" src="assets/img/apple-icon.png" style="height: 80px; width: 83px;" alt=""></a>
+                    <div class="d-flex navbar-fixed-top ms-5">
+                        <button type="button" style="float: right;" class="navbar-right navbar-toggler d-lg-none d-md-block my-1 ms-md-5" data-bs-toggle="collapse" data-bs-target="#lightnav" aria-controls="lightnav" aria-expanded="true">
+                            <svg width="27px" height="27px" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" fill="#5d5b5b" stroke="#5d5b5b"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M64 192h896v76.8H64V192z m0 281.6h896v76.8H64V473.6z m0 281.6h896V832H64v-76.8z" fill="#5d5b5b"></path></g></svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="navbar-collapse collapse" id="lightnav">
+            <div class="navbar-collapse collapse" id="lightnav" >
                 <ul class="navbar-nav mx-lg-auto n-nicon" style=" font-size: 18px;">
                     <li class="nav-item">
                         <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Home</a>
@@ -109,12 +90,12 @@
                         <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Contact</a>
                     </li>
                 </ul>
-                <div class="">
-                    <ul class="navbar navbar-nav mb-2 n-icon me-5 d-flex flex-row ">
+                <div class="ml-3">
+                    <ul class="navbar navbar-nav mb-2 n-icon d-flex flex-row justify-content-between">
                         <li class="nav-item d-none d-lg-block">
                             <a class="input-group mw-100" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color: black;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-4" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                                 </svg>
                             </a>
                         </li>
@@ -130,9 +111,9 @@
                                     <div class="col-12 offset-3">
                                         <div class="modal-body w-50">
                                             <form class="input-group ">
-                                                <input type="text"  class="res form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
+                                                <input type="text" class="form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
                                                 <button class="btn btn-success" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
-                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                                                     </svg>
                                                 </button>
                                             </form>
@@ -142,30 +123,31 @@
                             </div>
                             </div>
                         </div>
-                        <li class="d-lg-none d-md-block">
+                        <li class="d-lg-none d-md-block w-50">
                             <form class="input-group" style="width: 100%;">
                                 <input type="text" style="width: 85px;" class="res form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
                                 <button class="btn btn-secondary" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#000" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
                                     </svg>
                                 </button>
                             </form>
                         </li>
-                        <li class="nav-item ">
-                            <a href="#" class=" fa" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-                                <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                                <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
-                            </svg>
-                            <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
-                            </a>
-                        </li>
-                        <li class="nav-item me-5">
-                            <a href="#" style="color: black;" class=" fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                            </svg>
-                            <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
-                            </a>
-                        </li>
+                        <div class="d-flex flex-row justify-content-end">
+                            <li class="nav-item ">
+                                <a href="#" class=" fa" style="color: black;"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                </svg>
+                                <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
+                                </a>
+                            </li>
+                            <li class="nav-item me-5">
+                                <a href="#" style="color: black;" class=" fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                                </svg>
+                                <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
+                                </a>
+                            </li>
                     </ul>
                 </div>
             </div>
@@ -173,6 +155,6 @@
     </nav>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
