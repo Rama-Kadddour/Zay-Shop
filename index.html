@@ -19,26 +19,58 @@
         .nav-item{
             font-weight: 400
         }
-        @media (max-width: 150) {
-            .navbar-fixed-top{
-                margin-top: 0 !important;
+        #gg{
+            background-color: rgb(53, 110, 53);
+        }
+        .icons-nav{
+            display: flex !important;
+        }
+        .carousel-control-next-icon{
+            color: rgb(53, 110, 53);
+        }
+        .carousel-control-prev-icon{
+            color: rgb(53, 110, 53);
+        }
+        .navbar-toggler{
+            position: absolute;
+            top: 24%;
+            right: 16%;
+        }
+        .rounded-circle{
+                max-width: 340px;
+            }
+        .hover-success:hover{
+                color: green;
+        }
+        @media (max-width:1400px) and (min-width: 1000px) {
+            .rounded-circle{
+                max-width: 275px;
             }
         }
-        @media (max-width: 992) {
-            .ex-nav{
-                height: 800px;
-            }
-            .coll{
-                display: block;
-            }
-            .n-nicon{
-                margin-left: 200px;
-                display: block;
-            }
-            .n-icon{
-                display: flex !important;
+        @media (max-width:1000px) and (min-width: 760px) {
+            .rounded-circle{
+                max-width: 175px;
             }
         }
+        @media (max-width: 760px) {
+            .carousel-inner {
+                min-height: 775px;
+            }
+            .rounded-circle{
+                max-width: 440px;
+            }
+        }
+        @media (max-width: 500px) {
+            .navbar-toggler{
+                position: absolute;
+                top: 25%;
+                right: 3%;
+            } 
+            .rounded-circle{
+                max-width: 400px;
+            }
+        }
+        
     </style>
 </head>
 <body>
@@ -91,7 +123,7 @@
                     </li>
                 </ul>
                 <div class="ml-3">
-                    <ul class="navbar navbar-nav mb-2 n-icon d-flex flex-row justify-content-between">
+                    <ul class="iconse-nav navbar navbar-nav mb-2 n-icon d-flex flex-row justify-content-between">
                         <li class="nav-item d-none d-lg-block">
                             <a class="input-group mw-100" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="color: black;">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search me-4" viewBox="0 0 16 16">
@@ -153,6 +185,321 @@
             </div>
         </div>
     </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
+            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></li>
+            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner"  style="height: 685px; background-color: #EFEFEF;">
+            <div class="carousel-item active">
+                <div class="container" >
+                    <div class="row p-5">
+                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_01.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-sm-12 ">
+                            <div class="text-start mt-lg-5 pt-lg-5">
+                                <h1 class="text-success mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;"> <b style="font-weight: 300;">Zay</b> eCommerce</h1>
+                                <div style="font-size: 18px; font-weight: 300;">
+                                    <span style="font-weight: 300; font-size: 28px;" >Tiny and Perfect eCommerce Template</span><br>
+                                        Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). This template is 100% free provided by <a href="#" class="text-success" style="text-decoration: underline;">TemplateMo</a>  website. Image credits go to <a href="#" class="text-success" style="text-decoration: underline;">Freepik Stories</a> , Unsplash and <a href="#" class="text-success" style="text-decoration: underline;">Icons 8</a>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" >
+                    <div class="row p-5">
+                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_02.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-sm-12">
+                            <div class="text-start mt-lg-5 pt-lg-5">
+                                <h1 class="mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;">Proident occaecat</h1>
+                                <div style="font-size: 18px; font-weight: 400;">
+                                    <span style="font-weight: 300; font-size: 28px;" >Aliquip ex ea commodo consequat</span><br>
+                                    You are permitted to use this Zay CSS template for your commercial websites. You are <b>not permitted</b> to re-distribute the template ZIP file in any kind of template collection websites.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container" >
+                    <div class="row p-5">
+                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_03.jpg"></div>
+                        <div class="col-lg-6 col-md-12 d-flex col-sm-12">
+                            <div class="text-start mt-lg-5 pt-lg-5">
+                                <h1 class="mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;">Repr in voluptate</h1>
+                                <div style="font-size: 18px; font-weight: 400;">
+                                    <span style="font-weight: 300; font-size: 28px;" >Ullamco laboris nisi ut</span><br>
+                                    We bring you 100% free CSS templates for your websites. If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <div class="">
+        <div class="row my-5 text-center">
+            <h2 class="" style="font-weight: 200; font-size: 50px;">Categories of The Month</h2>
+            <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt
+                mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4 col-12">
+                <img class="rounded-circle responsive" src="assets/img/category_img_01.jpg" alt="">
+                <p class="mt-4" style="font-size: 22px; font-weight: 600;">Watches</p>
+                <button class="btn btn-success rounded my-3">Go Shop</button>
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="rounded-circle responsive" src="assets/img/category_img_02.jpg" alt="">
+                <p class="mt-4" style="font-size: 22px; font-weight: 600;">Shoes</p>
+                <button class="btn btn-success rounded my-3">Go Shop</button>
+            </div>
+            <div class="col-md-4 col-12">
+                <img class="rounded-circle responsive" src="assets/img/category_img_03.jpg" alt="">
+                <p class="mt-4" style="font-size: 22px; font-weight: 600;">Accessories</p>
+                <button class="btn btn-success rounded my-2">Go Shop</button>
+            </div>
+        </div>
+        <div class="pb-5 bg-light" >
+            <div class="row mt-5 text-center pt-5">
+                <h2 class="" style="font-weight: 200; font-size: 50px;">Featured Product</h2>
+                <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+                </p>
+            </div>
+            <div class="row mb-5 px-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card h-100 ms-sm-4">
+                            <a href=""><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6 float-start">
+                                        <div class="float-start d-flex">
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4 class="float-end lead text-muted">
+                                            $240.00
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="">
+                                        <a href="" class="card-title h3">Gym Weight </a>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="" style="font-size: 20px;">
+                                        <p class="card-text float-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.</p>
+                                    </div>
+                                </div>
+                                <div class="row float-start lead text-muted ms-1 my-4 mb-5">
+                                    Reviews (24)
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 ms-sm-4">
+                            <a href=""><img src="assets/img/feature_prod_02.jpg" class="card-img-top " alt=""></a>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6 float-start">
+                                        <div class="float-start d-flex">
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4 class="float-end lead text-muted">
+                                            $480.00
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="">
+                                        <a href="" class="card-title h3">Cloud Nike Shoes</a>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="" style="font-size: 20px;">
+                                        <p class="card-text float-start">LAenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.</p>
+                                    </div>
+                                </div>
+                                <div class="row float-start lead text-muted ms-1 my-4 mb-5">
+                                    Reviews (48)
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 ms-sm-4">
+                            <a href=""><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-sm-6 float-start">
+                                        <div class="float-start d-flex">
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <h4 class="float-end lead text-muted">
+                                            $360.00
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="">
+                                        <a href="" class="card-title h3">Summer Addides Shoes</a>
+                                    </div>
+                                </div>
+                                <div class="row float-start">
+                                    <div class="" style="font-size: 20px;">
+                                        <p class="card-text float-start">Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</p>
+                                    </div>
+                                </div>
+                                <div class="row float-start lead text-muted ms-1 my-4 mb-5">
+                                    Reviews (74)
+                                </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<footer class="bg-dark text-center text-white">
+    <div class="ms-5 p-4">
+        <section class="">
+            <div class="row my-4 text-start">
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h2 class="text-success" style="font-weight: 600;">Zay Shop</h2>
+                <hr>
+                <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
+                  <li>
+                    <p> 123 Consectetur at ligula 10660</p>
+                  </li>
+                  <li class="mb-3 hover-success">
+                    <a href="mailto:info@company.com" style="color: #ffffff; link-hover: green;"><svg height="19px" width="19px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fff" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
+                        info@company.com
+                    </a>
+                  </li>
+                  <li class="mb-3 hover-success">
+                    <a href="tel:0100200340" style="color: #fff;"><svg fill="#CFD6E1" width="19px" height="19px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"></path></g></svg>
+                        010-020-0340
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h2 class="">Products</h2>
+                <hr>
+                <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Luxury</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Sport Wear</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Men's Shoes</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Women's Shoes</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Popular Dress</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Gym Accessories</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Sport Shoes</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h2 class="">Further Info</h2>
+                <hr>
+                <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Home</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">About Us</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Shop Locations</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">FAQs</a>
+                  </li>
+                  <li class="mb-2 hover-success">
+                    <a href="#!" class="text-white">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </section>
+        <hr>
+        <section class="mt-4 mb-4">
+            <div class="row mt-4">
+                <div class="col-md-6 col-sm-12 float-start d-flex">
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="fa fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div>
+                <div class="col-md-6 col-sm-12 ms-auto mt-1">
+                <div class="input-group w-75 ms-auto">
+                    <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
+                    <button class="btn btn-success" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>
+      </section>
+    </div>
+    <div class="p-4 d-flex justify-content-start" style="background-color: rgba(15, 15, 19, 0.801);">
+        <div class="ps-5 ms-5">Copyright © 2021 Rama Kaddour <a class="text-white hover-success" href="https://templatemo.com/">TemplateMo</a> </div>
+      
+    </div>
+</footer>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
