@@ -15,6 +15,7 @@
         }
         body {
             font-family: 'Cairo', sans-serif !important;
+            overflow-x: hidden;
         }
         .nav-item{
             font-weight: 400
@@ -32,15 +33,15 @@
             color: rgb(53, 110, 53);
         }
         .navbar-toggler{
-            position: absolute;
-            top: 24%;
-            right: 16%;
-        }
+                position: fixed;
+                top: 25px;
+                right: 3%;
+            } 
         .rounded-circle{
                 max-width: 340px;
             }
         .hover-success:hover{
-                color: green;
+                color: green !important;
         }
         @media (max-width:1400px) and (min-width: 1000px) {
             .rounded-circle{
@@ -61,20 +62,15 @@
             }
         }
         @media (max-width: 500px) {
-            .navbar-toggler{
-                position: absolute;
-                top: 25%;
-                right: 3%;
-            } 
             .rounded-circle{
-                max-width: 400px;
+                max-width: 380px;
             }
         }
         
     </style>
 </head>
-<body>
-    <div class="navbar-expand-lg d-none d-lg-block border-bottom ps-3 py-2" style="background-color: #212934;">
+<body class="">
+    <div class="d-none d-lg-block border-bottom ps-3 py-2" style="background-color: #212934;">
         <div class="container">
         <div class="row pb-1" style="font-size: 12px;">
             <div class="col">
@@ -98,7 +94,7 @@
     <nav class="navbar navbar-expand-lg bg-white">
         <div class="container">
             <div class="">
-                <div class="d-flex justify-content-between w-100">
+                <div class="d-flex justify-content-between">
                     <a class="ms-lg-5 ms-md-5" href="#"><img class="float-start me-5" src="assets/img/apple-icon.png" style="height: 80px; width: 83px;" alt=""></a>
                     <div class="d-flex navbar-fixed-top ms-5">
                         <button type="button" style="float: right;" class="navbar-right navbar-toggler d-lg-none d-md-block my-1 ms-md-5" data-bs-toggle="collapse" data-bs-target="#lightnav" aria-controls="lightnav" aria-expanded="true">
@@ -113,7 +109,7 @@
                         <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">About</a>
+                        <a class="nav-link me-5 ms-md-5" href="about.html" style="color: black;">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link me-5 ms-md-5" href="#" style="color: black;">Shop</a>
@@ -180,6 +176,7 @@
                                 <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
                                 </a>
                             </li>
+                        </div>
                     </ul>
                 </div>
             </div>
@@ -251,25 +248,27 @@
             </button>
         </div>
     </div>
-    <div class="">
+
+
+    <div class="of">
         <div class="row my-5 text-center">
-            <h2 class="" style="font-weight: 200; font-size: 50px;">Categories of The Month</h2>
-            <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt
+            <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Categories of The Month</h2>
+            <p style="font-size: 19px;" class="col-lg-6 mx-auto">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt
                 mollit anim id est laborum.
             </p>
         </div>
         <div class="row text-center">
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-sm-12">
                 <img class="rounded-circle responsive" src="assets/img/category_img_01.jpg" alt="">
                 <p class="mt-4" style="font-size: 22px; font-weight: 600;">Watches</p>
                 <button class="btn btn-success rounded my-3">Go Shop</button>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-sm-12">
                 <img class="rounded-circle responsive" src="assets/img/category_img_02.jpg" alt="">
                 <p class="mt-4" style="font-size: 22px; font-weight: 600;">Shoes</p>
                 <button class="btn btn-success rounded my-3">Go Shop</button>
             </div>
-            <div class="col-md-4 col-12">
+            <div class="col-md-4 col-sm-12">
                 <img class="rounded-circle responsive" src="assets/img/category_img_03.jpg" alt="">
                 <p class="mt-4" style="font-size: 22px; font-weight: 600;">Accessories</p>
                 <button class="btn btn-success rounded my-2">Go Shop</button>
@@ -277,13 +276,13 @@
         </div>
         <div class="pb-5 bg-light" >
             <div class="row mt-5 text-center pt-5">
-                <h2 class="" style="font-weight: 200; font-size: 50px;">Featured Product</h2>
+                <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Featured Product</h2>
                 <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
             </div>
             <div class="row mb-5 px-5">
                 <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
+                    <div class="col-md-4">
                         <div class="card h-100 ms-sm-4">
                             <a href=""><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
                             <div class="card-body">
@@ -319,7 +318,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <div class="card h-100 ms-sm-4">
                             <a href=""><img src="assets/img/feature_prod_02.jpg" class="card-img-top " alt=""></a>
                             <div class="card-body">
@@ -355,7 +354,7 @@
                             </div>
                           </div>
                     </div>
-                    <div class="col">
+                    <div class="col-md-4">
                         <div class="card h-100 ms-sm-4">
                             <a href=""><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
                             <div class="card-body">
@@ -409,7 +408,7 @@
                     <p> 123 Consectetur at ligula 10660</p>
                   </li>
                   <li class="mb-3 hover-success">
-                    <a href="mailto:info@company.com" style="color: #ffffff; link-hover: green;"><svg height="19px" width="19px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fff" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
+                    <a href="mailto:info@company.com" style="color: #ffffff;"><svg height="19px" width="19px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fff" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
                         info@company.com
                     </a>
                   </li>
@@ -420,7 +419,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <div class="col-lg-4 col-md-12 mb-4 ">
                 <h2 class="">Products</h2>
                 <hr>
                 <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
@@ -447,7 +446,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <div class="col-lg-4 col-md-12 mb-4 ">
                 <h2 class="">Further Info</h2>
                 <hr>
                 <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
