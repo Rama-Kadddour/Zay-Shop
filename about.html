@@ -32,6 +32,7 @@
         .brand
         {
             filter: grayscale(1);
+            display: flex !important;
         }
         .brand:hover{
             filter: grayscale(0);
@@ -122,26 +123,26 @@
                         </li>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="row pb-5">
-                                    <div class="col offset-2">
-                                        <button type="button" class="btn-close mt-4 ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <div class="modal-content">
+                                    <div class="row pb-5">
+                                        <div class="col offset-2">
+                                            <button type="button" class="btn-close mt-4 ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-12 offset-3">
-                                        <div class="modal-body w-50">
-                                            <form class="input-group ">
-                                                <input type="text" class="form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
-                                                <button class="btn btn-success" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
-                                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                                    </svg>
-                                                </button>
-                                            </form>
+                                    <div class="row mt-2">
+                                        <div class="col-12 offset-3">
+                                            <div class="modal-body w-50">
+                                                <form class="input-group ">
+                                                    <input type="text" class="form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
+                                                    <button class="btn btn-success" type="button" id="button-addon2"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#fff" class="bi bi-search" viewBox="0 0 16 16">
+                                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                                        </svg>
+                                                    </button>
+                                                </form>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <li class="d-lg-none d-md-block w-50">
@@ -149,145 +150,145 @@
                                 <input type="text" style="width: 85px;" class="res form-control" placeholder="Search ..." aria-label="Search ..." aria-describedby="button-addon2">
                             </form>
                         </li>
-                            <li class="nav-item">
-                                <div class="btn-group dropstart">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-                                            <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
-                                            <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
-                                        </svg>
-                                        <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
-                                        </a>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu-start">
-                                        <div class="row d-flex " style="width:730px">
-                                            <div class="col-6">
-                                                <div class="" >
-                                                    <h5 class="card-title text-center mt-3 mb-4">YOUR PRODUCTS</h5>
-                                                    <div class="">
-                                                        <div class="dropdown-item row d-flex ms-1">
-                                                            <div class="col-4">
-                                                                <img class="mw-100" src="assets/img/brand_01.png" alt="">
-                                                            </div>
-                                                            <div class="col-7 my-2" style="font-size: 14px;" >
-                                                                Samsung Galaxy M11 64GB
-                                                            </div>
-                                                            <div class="col-1 float-end">
-                                                                <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="row text-secondary ps-2 my-2">
-                                                                color:white
-                                                            </div>
-                                                            <div class="row ">
-                                                                <div class="col-6 ">800$</div>
-                                                                <div class="col-6 qty">
-                                                                    <span class="minus1">-</span>
-                                                                    <input type="number" class="count" name="qty" value="1">
-                                                                    <span class="plus1">+</span>
-                                                                </div>
-                                                            </div>
+                        <li class="nav-item">
+                            <div class="btn-group dropstart">
+                                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+                                        <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"></path>
+                                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"></path>
+                                    </svg>
+                                    <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
+                                    </a>
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu-start">
+                                    <div class="row d-flex " style="width:730px">
+                                        <div class="col-6">
+                                            <div class="" >
+                                                <h5 class="card-title text-center mt-3 mb-4">YOUR PRODUCTS</h5>
+                                                <div class="">
+                                                    <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="col-4">
+                                                            <img class="mw-100" src="assets/img/brand_01.png" alt="">
                                                         </div>
-                                                        <div class="dropdown-item row d-flex ms-1">
-                                                            <div class="col-4">
-                                                                <img class="mw-100" src="assets/img/brand_01.png" alt="">
-                                                            </div>
-                                                            <div class="col-7 my-2" style="font-size: 14px;" >
-                                                                Samsung Galaxy M11 64GB
-                                                            </div>
-                                                            <div class="col-1 float-end">
-                                                                <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="row text-secondary ps-2 my-2">
-                                                                color:white
-                                                            </div>
-                                                            <div class="row ">
-                                                                <div class="col-6 ">800$</div>
-                                                                <div class="col-6 qty">
-                                                                    <span class="minus1">-</span>
-                                                                    <input type="number" class="count" name="qty" value="1">
-                                                                    <span class="plus1">+</span>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-7 my-2" style="font-size: 14px;" >
+                                                            Samsung Galaxy M11 64GB
                                                         </div>
-                                                        <div class="dropdown-item row d-flex ms-1">
-                                                            <div class="col-4">
-                                                                <img class="mw-100" src="assets/img/brand_01.png" alt="">
-                                                            </div>
-                                                            <div class="col-7 my-2" style="font-size: 14px;" >
-                                                                Samsung Galaxy M11 64GB
-                                                            </div>
-                                                            <div class="col-1 float-end">
-                                                                <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
-                                                            </div>
-                                                            <div class="row text-secondary ps-2 my-2 ">
-                                                                color:white
-                                                            </div>
-                                                            <div class="row ">
-                                                                <div class="col-6 ">800$</div>
-                                                                <div class="col-6 qty">
-                                                                    <span class="minus1">-</span>
-                                                                    <input type="number" class="count" name="qty" value="1">
-                                                                    <span class="plus1">+</span>
-                                                                </div>
-                                                            </div>
+                                                        <div class="col-1 float-end">
+                                                            <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
                                                         </div>
-                                                        <hr style="border: 3px solid rgb(17, 255, 0);">
-                                                        <div class="row ms-1">
-                                                            <div class="col-6">Discount</div>
-                                                            <div class="col-6 text-end">95$</div>
+                                                        <div class="row text-secondary ps-2 my-2">
+                                                            color:white
                                                         </div>
-                                                        <div class="row ms-1">
-                                                            <div class="col-6">Total</div>
-                                                            <div class="col-6 text-end">9500$</div>
+                                                        <div class="row ">
+                                                            <div class="col-6 ">800$</div>
+                                                            <div class="col-6 qty">
+                                                                <span class="minus1">-</span>
+                                                                <input type="number" class="count" name="qty" value="1">
+                                                                <span class="plus1">+</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6">
-                                                <div class="me-3">
-                                                    <h5 class="card-title text-center mt-3 mb-4">PAYMENT</h5>
-                                                    <div>
-                                                        <form action="">
-                                                            <div class="mb-4">
-                                                                <label for="cardNumber" class="form-label">Card Number</label>
-                                                                <input type="number" value="12312312" class="form-control" id="cardNumber">
+                                                    <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="col-4">
+                                                            <img class="mw-100" src="assets/img/brand_01.png" alt="">
+                                                        </div>
+                                                        <div class="col-7 my-2" style="font-size: 14px;" >
+                                                            Samsung Galaxy M11 64GB
+                                                        </div>
+                                                        <div class="col-1 float-end">
+                                                            <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row text-secondary ps-2 my-2">
+                                                            color:white
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-6 ">800$</div>
+                                                            <div class="col-6 qty">
+                                                                <span class="minus1">-</span>
+                                                                <input type="number" class="count" name="qty" value="1">
+                                                                <span class="plus1">+</span>
                                                             </div>
-                                                            <hr class="mx-auto" style="width:100px; border: 1px dotted black">
-                                                            <div class="mb-4">
-                                                                <label for="name" class="form-label">Name on card</label>
-                                                                <input type="text" value="Rama Kaddour" class="form-control" id="name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="col-4">
+                                                            <img class="mw-100" src="assets/img/brand_01.png" alt="">
+                                                        </div>
+                                                        <div class="col-7 my-2" style="font-size: 14px;" >
+                                                            Samsung Galaxy M11 64GB
+                                                        </div>
+                                                        <div class="col-1 float-end">
+                                                            <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row text-secondary ps-2 my-2 ">
+                                                            color:white
+                                                        </div>
+                                                        <div class="row ">
+                                                            <div class="col-6 ">800$</div>
+                                                            <div class="col-6 qty">
+                                                                <span class="minus1">-</span>
+                                                                <input type="number" class="count" name="qty" value="1">
+                                                                <span class="plus1">+</span>
                                                             </div>
-                                                            <hr class="mx-auto" style="width:100px; border: 1px dotted black">
-                                                            <div class="row mb-4">
-                                                                <div class="col-6">
-                                                                    <label for="expiration" class="form-label">Expiration</label>
-                                                                    <input type="date" value="31/1" class="form-control" id="exp">
-                                                                </div>
-                                                                <div class="col-6">
-                                                                    <label for="name" class="form-label">CVV</label>
-                                                                    <input type="password" value="54654" class="form-control" id="cvv">
-                                                                </div>
-                                                                <div class="row ms-1">
-                                                                    <button class="btn btn-primary mt-5">Buy Now</button>
-                                                                </div>
-                                                            </div>
-                                                            <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing. saepe libero <a href="">consectetur accusamus!</a></div>
-                                                            <a class="fw-bold ms-2 " href="#"><i class="fa fa-angle-left me-3 mb-4"></i> Back to shopping</a>
-                                                        </form>
+                                                        </div>
+                                                    </div>
+                                                    <hr style="border: 3px solid rgb(17, 255, 0);">
+                                                    <div class="row ms-1">
+                                                        <div class="col-6">Discount</div>
+                                                        <div class="col-6 text-end">95$</div>
+                                                    </div>
+                                                    <div class="row ms-1">
+                                                        <div class="col-6">Total</div>
+                                                        <div class="col-6 text-end">9500$</div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li class="nav-item ">
-                                <a href="#" style="color: black;" class=" fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                                </svg>
-                                <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
-                                </a>
-                            </li>
+                                        <div class="col-6">
+                                            <div class="me-3">
+                                                <h5 class="card-title text-center mt-3 mb-4">PAYMENT</h5>
+                                                <div>
+                                                    <form action="">
+                                                        <div class="mb-4">
+                                                            <label for="cardNumber" class="form-label">Card Number</label>
+                                                            <input type="number" value="12312312" class="form-control" id="cardNumber">
+                                                        </div>
+                                                        <hr class="mx-auto" style="width:100px; border: 1px dotted black">
+                                                        <div class="mb-4">
+                                                            <label for="name" class="form-label">Name on card</label>
+                                                            <input type="text" value="Rama Kaddour" class="form-control" id="name">
+                                                        </div>
+                                                        <hr class="mx-auto" style="width:100px; border: 1px dotted black">
+                                                        <div class="row mb-4">
+                                                            <div class="col-6">
+                                                                <label for="expiration" class="form-label">Expiration</label>
+                                                                <input type="date" value="31/1" class="form-control" id="exp">
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <label for="name" class="form-label">CVV</label>
+                                                                <input type="password" value="54654" class="form-control" id="cvv">
+                                                            </div>
+                                                            <div class="row ms-1">
+                                                                <button class="btn btn-primary mt-5">Buy Now</button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing. saepe libero <a href="">consectetur accusamus!</a></div>
+                                                        <a class="fw-bold ms-2 " href="#"><i class="fa fa-angle-left me-3 mb-4"></i> Back to shopping</a>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="#" style="color: black;" class=" fa"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                            </svg>
+                            <span class="translate-middle badge rounded-pill text-dark bg-light">+99</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -331,51 +332,49 @@
             <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
         </div>
-        <div class="row text-center my-5 ">
-            <div id="carouselExampleAutoplaying" class="responsive carousel slide " data-bs-ride="carousel">
-                <div class="carousel-inner container px-lg-5 mx-lg-5">
-                <div class="carousel-item active px-lg-5 ">
-                    <div class="row ms-lg-5 px-lg-5">
-                        <div class="col-sm-3 brand ps-xl-5">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_01.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand ">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_02.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_03.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand pe-5">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_04.png" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item px-lg-5"> 
-                    <div class="row ms-lg-5 px-lg-5">
-                        <div class="col-sm-3 brand ps-lg-5">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_01.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand ">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_02.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_03.png" alt=""></a>
-                        </div>
-                        <div class="col-sm-3 brand pe-5">
-                            <a href=""><img style="width: 125px;" src="assets/img/brand_04.png" alt=""></a>
+        <div class="row my-5">
+            <div class="col-3"></div>
+            <div class="col-6">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-sm-3 brand ">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_01.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand ">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_02.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_03.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand ">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_04.png" alt=""></a>
+                            </div>
                         </div>
                     </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-sm-3 brand ">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_01.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand ">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_02.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_03.png" alt=""></a>
+                            </div>
+                            <div class="col-sm-3 brand">
+                                <a href=""><img style="width: 120px;" src="assets/img/brand_04.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"></button>
                 </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-                </button>
             </div>
+        <div class="col-3"></div>
         </div>
     </div>
 
