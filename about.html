@@ -80,16 +80,15 @@
             background-color: #59AB6E;
             transition: background-color 0.1s ease;
         }
+        .hover-success{
+            color:white !important;
+        }
         .hover-success:hover{
             color:green !important;
         }
-        .cartt{
-            width: 350px;
-        }
-        @media (min-width:800px) {
-            .cartt{
-                width: 730px;
-            }
+        
+        .brand-size{
+            max-width: 120px;
         }
         @media (max-width: 800px) {
             .asec{
@@ -97,6 +96,19 @@
             }
             .a-image{
                 width: 65%;
+            }
+            .padding-top{
+                padding-top: 40px;
+            }
+            .margin-topp{
+                margin-top: 40px;
+            }
+            .cartt{
+            width: 350px;
+            }
+            .brand-size{
+                width: 85px;
+                display: flex !important;
             }
         }
 
@@ -106,7 +118,7 @@
 <body class="">
     <div class="d-none d-lg-block border-bottom ps-3 py-2" style="background-color: #212934;">
         <div class="container">
-        <div class="row pb-1" style="font-size: 12px;">
+        <div class="row mw-100 pb-1" style="font-size: 12px;">
             <div class="col">
             <a href="mailto:info@company.com" class="me-2" style="color: #CFD6E1;"><svg class=" me-2" height="13px" width="13px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#CFD6E1" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
                 info@company.com</a>
@@ -164,12 +176,12 @@
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
                             <div class="modal-content">
-                                <div class="row pb-5">
+                                <div class="row mw-100 pb-5">
                                     <div class="col offset-2">
                                         <button type="button" class="btn-close mt-4 ms-5" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                 </div>
-                                <div class="row mt-2">
+                                <div class="row mw-100 mt-2">
                                     <div class="col-12 offset-3">
                                         <div class="modal-body w-50">
                                             <form class="input-group ">
@@ -200,12 +212,12 @@
                                         <span class="translate-middle badge rounded-pill text-dark bg-light">7</span>
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu-start">
-                                        <div class="row d-flex cartt">
+                                        <div class="row mw-100 d-flex cartt">
                                             <div class="col-lg-6 col-sm-12">
                                                 <div class="" >
                                                     <h5 class="card-title text-center mt-3 mb-4">YOUR PRODUCTS</h5>
                                                     <div class="">
-                                                        <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="dropdown-item row mw-100 d-flex ms-1">
                                                             <div class="col-4">
                                                                 <img class="mw-100" src="assets/img/brand_01.png" alt="">
                                                             </div>
@@ -215,10 +227,10 @@
                                                             <div class="col-1 float-end">
                                                                 <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
                                                             </div>
-                                                            <div class="row text-secondary ps-2 my-2">
+                                                            <div class="row mw-100 text-secondary ps-2 my-2">
                                                                 color:white
                                                             </div>
-                                                            <div class="row ">
+                                                            <div class="row mw-100">
                                                                 <div class="col-6 ">800$</div>
                                                                 <div class="col-6 qty">
                                                                     <span class="minus1">-</span>
@@ -227,7 +239,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="dropdown-item row mw-100 d-flex ms-1">
                                                             <div class="col-4">
                                                                 <img class="mw-100" src="assets/img/brand_01.png" alt="">
                                                             </div>
@@ -237,10 +249,10 @@
                                                             <div class="col-1 float-end">
                                                                 <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
                                                             </div>
-                                                            <div class="row text-secondary ps-2 my-2">
+                                                            <div class="row mw-100 text-secondary ps-2 my-2">
                                                                 color:white
                                                             </div>
-                                                            <div class="row ">
+                                                            <div class="row mw-100">
                                                                 <div class="col-6 ">800$</div>
                                                                 <div class="col-6 qty">
                                                                     <span class="minus1">-</span>
@@ -249,7 +261,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="dropdown-item row d-flex ms-1">
+                                                        <div class="dropdown-item row mw-100 d-flex ms-1">
                                                             <div class="col-4">
                                                                 <img class="mw-100" src="assets/img/brand_01.png" alt="">
                                                             </div>
@@ -259,10 +271,10 @@
                                                             <div class="col-1 float-end">
                                                                 <button type="button" class="btn-close small mt-2" disabled aria-label="Close"></button>
                                                             </div>
-                                                            <div class="row text-secondary ps-2 my-2 ">
+                                                            <div class="row mw-100 text-secondary ps-2 my-2 ">
                                                                 color:white
                                                             </div>
-                                                            <div class="row ">
+                                                            <div class="row mw-100">
                                                                 <div class="col-6 ">800$</div>
                                                                 <div class="col-6 qty">
                                                                     <span class="minus1">-</span>
@@ -272,11 +284,11 @@
                                                             </div>
                                                         </div>
                                                         <hr style="border: 3px solid rgb(17, 255, 0);">
-                                                        <div class="row ms-1">
+                                                        <div class="row mw-100 ms-1">
                                                             <div class="col-6">Discount</div>
                                                             <div class="col-6 text-end">95$</div>
                                                         </div>
-                                                        <div class="row ms-1">
+                                                        <div class="row mw-100 ms-1">
                                                             <div class="col-6">Total</div>
                                                             <div class="col-6 text-end">9500$</div>
                                                         </div>
@@ -298,7 +310,7 @@
                                                                 <input type="text" value="Rama Kaddour" class="form-control" id="name">
                                                             </div>
                                                             <hr class="mx-auto" style="width:100px; border: 1px dotted black">
-                                                            <div class="row mb-4">
+                                                            <div class="row mw-100 mb-4">
                                                                 <div class="col-6">
                                                                     <label for="expiration" class="form-label">Expiration</label>
                                                                     <input type="date" value="31/1" class="form-control" id="exp">
@@ -307,7 +319,7 @@
                                                                     <label for="name" class="form-label">CVV</label>
                                                                     <input type="password" value="54654" class="form-control" id="cvv">
                                                                 </div>
-                                                                <div class="row ms-1">
+                                                                <div class="row mw-100 ms-1">
                                                                     <button class="btn btn-primary mt-5">Buy Now</button>
                                                                 </div>
                                                             </div>
@@ -334,20 +346,22 @@
         </div>
     </nav>
 
-    <div class="asec text-white row " style="background-color: #59AB6E; font-weight: 300; font-size:larger;">
-        <div class="col-sm-10 col-md-8 align-self-center ps-5 ms-lg-0 ms-sm-5 mt-sm-5">
-            <h1 style="font-weight: 600;">About Us</h1>
+    <div class="asec" style="background-color: #59AB6E; font-weight: 300; font-size:larger;">
+        <div class="row mw-100 text-white padding-top">
+            <div class="col-sm-10 col-md-8 align-self-center ps-5 ms-lg-0 ms-sm-5 mt-sm-5">
+                <h1 class="padding-top" style="font-weight: 600;">About Us</h1>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </div>
-        <div class="col-sm-12 col-md-4 mt-lg-4  pt-lg-3 text-center">
-            <img class="a-image pe-lg-4" src="assets/img/about-hero.svg" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4 mt-lg-4  pt-lg-3 text-center">
+                <img class="a-image pe-lg-4 margin-topp" src="assets/img/about-hero.svg" alt="">
+            </div>
         </div>
     </div>
-    <div class="row my-5 text-center">
+    <div class="row mw-100 my-5 text-center">
         <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Our Services</h2>
         <p style="font-size: 19px;" class="col-lg-6 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.</p>
     </div>
-    <div class="row mx-5 text-center align-self-center my-5 px-5">
+    <div class="row mw-100 mx-5 text-center align-self-center my-5 px-5">
         <div class="col-lg-3 col-md-6 col-sm-12 shadow py-5 tex-white">
             <i class="fa fa-truck fa-lg mb-4 g-icon" style="font-size: 100px;"></i>
             <p class="h4 mt-2 p-black">Deleivery Services</p>
@@ -366,45 +380,49 @@
         </div>
     </div>
     <div class="pb-5 bg-light" style="height: 470px;">
-        <div class="row mt-5 text-center pt-5">
+        <div class=" mw-100 mt-5 text-center pt-5">
             <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Featured Product</h2>
             <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
         </div>
-        <div class="row my-5">
-            <div class="col-3"></div>
-            <div class="col-6">
+        <div class="row mw-100 my-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 col-xs-12">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner d-sm-flex">
                         <div class="carousel-item active">
                             <div class="row">
-                                <div class="col-sm-3 brand ">
-                                    <a href=""><img style="width: 120px;" src="assets/img/brand_01.png" alt=""></a>
-                                </div>
-                                <div class="col-sm-3 brand ">
-                                    <a href=""><img style="width: 120px;" src="assets/img/brand_02.png" alt=""></a>
-                                </div>
-                                <div class="col-sm-3 brand">
-                                    <a href=""><img style="width: 120px;" src="assets/img/brand_03.png" alt=""></a>
-                                </div>
-                                <div class="col-sm-3 brand ">
-                                    <a href=""><img style="width: 120px;" src="assets/img/brand_04.png" alt=""></a>
+                                <div class="d-flex ms-5 ms-md-0 ">
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_01.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_02.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_03.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_04.png" alt=""></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-sm-3 brand ">
-                                <a href=""><img style="width: 120px;" src="assets/img/brand_01.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-3 brand ">
-                                <a href=""><img style="width: 120px;" src="assets/img/brand_02.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-3 brand">
-                                <a href=""><img style="width: 120px;" src="assets/img/brand_03.png" alt=""></a>
-                            </div>
-                            <div class="col-sm-3 brand">
-                                <a href=""><img style="width: 120px;" src="assets/img/brand_04.png" alt=""></a>
+                            <div class="d-flex ms-5 ms-md-0">
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_01.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_02.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_03.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_04.png" alt=""></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -413,29 +431,29 @@
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"></button>
                 </div>
             </div>
-        <div class="col-3"></div>
+        <div class="col-md-3"></div>
         </div>
     </div>
 
 
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-dark text-center">
         <div class="ms-5 p-4">
             <section class="">
-                <div class="row my-4 text-start">
+                <div class="row mw-100 my-4 text-start">
                   <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
                     <h2 class="text-success" style="font-weight: 600;">Zay Shop</h2>
                     <hr>
                     <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
                       <li>
-                        <p> 123 Consectetur at ligula 10660</p>
+                        <p class="text-white"> 123 Consectetur at ligula 10660</p>
                       </li>
-                      <li class="mb-3 hover-success">
-                        <a href="mailto:info@company.com" style="color: #ffffff;"><svg height="19px" width="19px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fff" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
+                      <li class="mb-3">
+                        <a href="mailto:info@company.com" class="hover-success"><svg height="19px" width="19px" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xml:space="preserve" fill="#fff" stroke="#CFD6E1"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:#CFD6E1;} </style> <g> <path class="st0" d="M452.29,74.535H59.71C26.728,74.535,0,101.263,0,134.236v243.527c0,32.974,26.728,59.702,59.71,59.702H452.29 c32.973,0,59.71-26.728,59.71-59.702V134.236C512,101.263,485.264,74.535,452.29,74.535z M483.49,393.849l-11.366,13.46 L312.957,277.407l-24.65,23.454c-18.268,16.776-46.345,16.776-64.614,0l-24.65-23.454L39.876,407.309l-11.366-13.46l149.44-136.517 L27.531,115.968l8.893-11.783L256,270.56l219.575-166.375l8.886,11.783l-150.41,141.364L483.49,393.849z"></path> </g> </g></svg>
                             info@company.com
                         </a>
                       </li>
-                      <li class="mb-3 hover-success">
-                        <a href="tel:0100200340" style="color: #fff;"><svg fill="#CFD6E1" width="19px" height="19px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"></path></g></svg>
+                      <li class="mb-3">
+                        <a href="tel:0100200340" class="hover-success"><svg fill="#CFD6E1" width="19px" height="19px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"></path></g></svg>
                             010-020-0340
                         </a>
                       </li>
@@ -446,25 +464,25 @@
                     <hr>
                     <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Luxury</a>
+                        <a class="hover-success" href="#!">Luxury</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Sport Wear</a>
+                        <a class="hover-success" href="#!">Sport Wear</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Men's Shoes</a>
+                        <a class="hover-success" href="#!">Men's Shoes</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Women's Shoes</a>
+                        <a class="hover-success" href="#!">Women's Shoes</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Popular Dress</a>
+                        <a class="hover-success" href="#!">Popular Dress</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Gym Accessories</a>
+                        <a class="hover-success" href="#!">Gym Accessories</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Sport Shoes</a>
+                        <a class="hover-success" href="#!">Sport Shoes</a>
                       </li>
                     </ul>
                   </div>
@@ -473,19 +491,19 @@
                     <hr>
                     <ul class="list-unstyled mb-2" style="font-size: 20px; font-weight:300">
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Home</a>
+                        <a class="hover-success" href="#!">Home</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">About Us</a>
+                        <a class="hover-success" href="#!">About Us</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Shop Locations</a>
+                        <a class="hover-success" href="#!">Shop Locations</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">FAQs</a>
+                        <a class="hover-success" href="#!">FAQs</a>
                       </li>
                       <li class="mb-2 hover-success">
-                        <a href="#!" class="text-white">Contact</a>
+                        <a class="hover-success" href="#!">Contact</a>
                       </li>
                     </ul>
                   </div>
@@ -493,7 +511,7 @@
             </section>
             <hr>
             <section class="mt-4 mb-4">
-                <div class="row mt-4">
+                <div class="row mw-100 mt-4">
                     <div class="col-md-6 col-sm-12 float-start d-flex">
                         <a class="btn btn-outline-light btn-floating m-1 rounded-circle" href="#!" role="button">
                             <i class="fa fa-facebook-f"></i>
@@ -517,7 +535,7 @@
           </section>
         </div>
         <div class="p-4 d-flex justify-content-start" style="background-color: rgba(15, 15, 19, 0.801);">
-            <div class="ps-5 ms-5">Copyright © 2021 Rama Kaddour <a class="text-white hover-success" href="https://templatemo.com/">TemplateMo</a> </div>
+            <div class="ps-5 ms-5"><span class="text-white"> Copyright © 2023 Rama Kaddour </span><a class="hover-success" href="https://templatemo.com/">TemplateMo</a> </div>
           
         </div>
     </footer>
