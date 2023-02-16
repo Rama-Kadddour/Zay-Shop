@@ -86,11 +86,6 @@
         .dark-text{
             color:black;
         }
-        @media (min-width:800px) {
-            .cartt{
-                width: 730px;
-            }
-        }
     </style>
     <style>
         .item .box {
@@ -125,6 +120,28 @@
         }
         .social a:hover {
         opacity:1;
+        }
+        .brand
+        {
+            filter: grayscale(1);
+            display: flex !important;
+        }
+        .brand:hover{
+            filter: grayscale(0);
+        }
+        .brand-size{
+            max-width: 120px;
+        }
+        @media (min-width:800px) {
+            .cartt{
+                width: 730px;
+            }
+        }
+        @media (max-width: 800px) {
+            .brand-size{
+                width: 85px;
+                display: flex !important;
+            }
         }
     </style>
 </head>
@@ -428,8 +445,8 @@
                 <div class="container">
                     <div class="row people d-flex justify-content-center">
                         <div class="col-md-4 col-lg-4 item">
-                            <div class="box">
-                                <img class="mw-100 mh-100" src="assets/img/shop_01.jpg" alt="">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_01.jpg" alt="">
                                 <div class="cover">
                                     <div class="social d-block">
                                         <button class="btn btn-success d-block btn-sm">
@@ -443,41 +460,80 @@
                                         </button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-lg-4 item">
-                            <div class="box">
-                                <img class="mw-100 mh-100" src="assets/img/shop_02.jpg" alt="">
-                                <div class="cover">
-                                    <div class="social d-block">
-                                        <button class="btn btn-success d-block btn-sm">
-                                            <a href="#"><i class="bi bi-heart"></i></a>
-                                        </button>
-                                        <button class="btn btn-success d-block my-2 btn-sm">
-                                            <a href="#"><i class="bi bi-eye"></i></a>
-                                        </button>
-                                        <button class="btn btn-success d-block btn-sm">
-                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a>
-                                        </button>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
                                     </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-4 col-lg-4 item">
-                            <div class="box">
-                                <img class="mw-100 mh-100" src="assets/img/shop_03.jpg" alt="">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_02.jpg" alt="">
                                 <div class="cover">
                                     <div class="social d-block">
                                         <button class="btn btn-success d-block btn-sm">
-                                            <a href="#"><i class="bi bi-heart"></i></a>
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
                                         </button>
                                         <button class="btn btn-success d-block my-2 btn-sm">
-                                            <a href="#"><i class="bi bi-eye"></i></a>
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
                                         </button>
                                         <button class="btn btn-success d-block btn-sm">
-                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a>
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
                                         </button>
                                     </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_03.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
                                 </div>
                             </div>
                         </div>
@@ -485,67 +541,268 @@
                 </div>
             </div>
             <div class="row mb-4">
-                <div class="team-grid">
-                    <div class="container">
-                        <div class="row people d-flex justify-content-center">
-                            <div class="col-md-4 col-lg-4 item">
-                                <div class="box">
-                                    <img class="mw-100 mh-100" src="assets/img/shop_04.jpg" alt="">
-                                    <div class="cover">
-                                        <div class="social d-block">
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-heart"></i></a><br>
-                                            </button>
-                                            <button class="btn btn-success d-block my-2 btn-sm">
-                                                <a href="#"><i class="bi bi-eye"></i></a><br>
-                                            </button>
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
-                                            </button>
-                                        </div>
+                <div class="container">
+                    <div class="row people d-flex justify-content-center">
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_04.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4 col-lg-4 item">
-                                <div class="box">
-                                    <img class="mw-100 mh-100" src="assets/img/shop_05.jpg" alt="">
-                                    <div class="cover">
-                                        <div class="social d-block">
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-heart"></i></a>
-                                            </button>
-                                            <button class="btn btn-success d-block my-2 btn-sm">
-                                                <a href="#"><i class="bi bi-eye"></i></a>
-                                            </button>
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a>
-                                            </button>
-                                        </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
                                     </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-lg-4 item">
-                                <div class="box">
-                                    <img class="mw-100 mh-100" src="assets/img/shop_06.jpg" alt="">
-                                    <div class="cover">
-                                        <div class="social d-block">
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-heart"></i></a>
-                                            </button>
-                                            <button class="btn btn-success d-block my-2 btn-sm">
-                                                <a href="#"><i class="bi bi-eye"></i></a>
-                                            </button>
-                                            <button class="btn btn-success d-block btn-sm">
-                                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a>
-                                            </button>
-                                        </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_05.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
                                     </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_06.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="container">
+                    <div class="row people d-flex justify-content-center">
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_07.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_08.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4 item">
+                            <div class="card mb-4 shadow">
+                                <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_09.jpg" alt="">
+                                <div class="cover">
+                                    <div class="social d-block">
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-heart"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block my-2 btn-sm">
+                                            <a href="#"><i class="bi bi-eye"></i></a><br>
+                                        </button>
+                                        <button class="btn btn-success d-block btn-sm">
+                                            <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p style="font-size: 20px;">Oupidatat non <br>
+                                        M/L/X/XL
+                                    </p>
+                                    <div class="text-center ">
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                                    </div>
+                                    <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <ul class="pagination pagination-lg justify-content-end me-5 pe-5">
+            <li class="page-item active" aria-current="page">
+            <span class="page-link bg-success">1</span>
+            </li>
+            <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+            <li class="page-item me-5"><a class="page-link text-dark" href="#">3</a></li>
+        </ul>
+    </div>
+
+    <div class="pb-5 bg-light" style="height: 470px;">
+        <div class=" mw-100 mt-5 text-center pt-5">
+            <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Our Brands</h2>
+            <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit amet.
+            </p>
+        </div>
+        <div class="row mw-100 my-5">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 col-xs-12">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner d-sm-flex">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="d-flex ms-5 ms-md-0 ">
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_01.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_02.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_03.png" alt=""></a>
+                                    </div>
+                                    <div class="col-sm-3 brand ">
+                                        <a href=""><img class="brand-size" src="assets/img/brand_04.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="d-flex ms-5 ms-md-0">
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_01.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_02.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_03.png" alt=""></a>
+                                </div>
+                                <div class="col-sm-3 brand ">
+                                    <a href=""><img class="brand-size" src="assets/img/brand_04.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev"></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next"></button>
+                </div>
+            </div>
+        <div class="col-md-3"></div>
         </div>
     </div>
 
