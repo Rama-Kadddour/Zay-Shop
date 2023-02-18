@@ -35,32 +35,23 @@
         .hover-success:hover{
             color: #50ee77 !important;
         }
-        .qty .count {
-            color: #000;
-            font-size: 18px;
-            min-width: 15px;
+        .icon-shape {
+            background-color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+            border: white 1px solid;
         }
-        .qty .plus {
-            color: black;
-            font: 15px Arial,sans-serif;
-            background-color: white !important;
-            }
-        .qty .minus {
-            color: black;
-            font: 20px Arial,sans-serif;
-            background-color: white !important;
+        .icon-sm {
+            width: 2rem;
+            height: 2rem;
+            
         }
-        input{  
-            border: 0;
-            width: 2%;
-        }
-        nput::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        input:disabled{
-            background-color:white;
+        .btn-success1{
+            background-color: #198754;
+            color: white;
         }
         .cartt{
             width: 400px;
@@ -72,7 +63,7 @@
         }
     </style>
 </head>
-<body class="">
+<body class="mw-100">
     <div class="d-none d-lg-block border-bottom ps-3 py-2" style="background-color: #212934;">
         <div class="container">
         <div class="row pb-1" style="font-size: 12px;">
@@ -187,12 +178,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="dropdown-item row mw-100 d-flex ms-1">
@@ -209,12 +204,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="dropdown-item row mw-100 d-flex ms-1">
@@ -231,12 +230,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus  rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus  rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <hr style="border: 3px solid rgb(17, 255, 0);">
@@ -301,7 +304,7 @@
             </div>
         </div>
     </nav>
-    <div class="row bg-light">
+    <div class="row mw-100 bg-light">
         <div class="col-5 pe-4">
             <div class="row ps-5 my-5">
                 <img src="assets/img/product_single_10.jpg" alt="">
@@ -388,6 +391,25 @@
                     Dolore magna aliqua <br>
                     Excepteur sint <br>
                 </span>
+            </div>
+            <div class="row ms-3 mt-3 d-flex"  style="font-size: 18px; font-weight: 400;">
+                <p class="col-1">
+                    Size:
+                </p>
+                <span class="col-4">
+                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">S</button>
+                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">M</button>
+                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">L</button>
+                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">XL</button>
+                </span>
+                <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
+                <p class="col-1">Quantity</p>
+                <div class="col-3 input-group w-auto justify-content-end align-items-center">
+                    <input type="button" value="-" class="btn-success1 button-minus rounded  icon-shape icon-sm mx-1 " data-field="quantity">
+                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                    <input type="button" value="+" class="btn-success1 button-plus rounded icon-shape icon-sm " data-field="quantity">
+                </div>
+                
             </div>
         </div>
 
@@ -498,43 +520,77 @@
     </footer>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-    $(document).ready(function(){
-		    $('.count').prop('disabled', true);
-   			$(document).on('click','.plus1',function(){
-				$('.count').val(parseInt($('.count').val()) + 1 );
-    		});
-        	$(document).on('click','.minus1',function(){
-    			$('.count').val(parseInt($('.count').val()) - 1 );
-    				if ($('.count').val() == 0) {
-						$('.count').val(1);
-					}
-    	    	});
- 	});
-     $(document).ready(function(){
-		    $('.count').prop('disabled', true);
-   			$(document).on('click','.plus2',function(){
-				$('.count').val(parseInt($('.count').val()) + 1 );
-    		});
-        	$(document).on('click','.minus2',function(){
-    			$('.count').val(parseInt($('.count').val()) - 1 );
-    				if ($('.count').val() == 0) {
-						$('.count').val(1);
-					}
-    	    	});
- 	});
-     $(document).ready(function(){
-		    $('.count').prop('disabled', true);
-   			$(document).on('click','.plus3',function(){
-				$('.count').val(parseInt($('.count').val()) + 1 );
-    		});
-        	$(document).on('click','.minus3',function(){
-    			$('.count').val(parseInt($('.count').val()) - 1 );
-    				if ($('.count').val() == 0) {
-						$('.count').val(1);
-					}
-    	    	});
- 	});
-    
+    function incrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal)) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(1);
+        }
+    }
+
+    function decrementValue(e) {
+        e.preventDefault();
+        var fieldName = $(e.target).data('field');
+        var parent = $(e.target).closest('div');
+        var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+        if (!isNaN(currentVal) && currentVal > 1) {
+            parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+        } else {
+            parent.find('input[name=' + fieldName + ']').val(1);
+        }
+    }
+
+    $('.input-group').on('click', '.button-plus', function(e) {
+        incrementValue(e);
+    });
+
+    $('.input-group').on('click', '.button-minus', function(e) {
+        decrementValue(e);
+    });
+</script>
+<script>
+    jQuery(document).ready(function(){
+    // This button will increment the value
+    $('[data-quantity="plus"]').click(function(e){
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If is not undefined
+        if (!isNaN(currentVal)) {
+            // Increment
+            $('input[name='+fieldName+']').val(currentVal + 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+    // This button will decrement the value till 0
+    $('[data-quantity="minus"]').click(function(e) {
+        // Stop acting like a button
+        e.preventDefault();
+        // Get the field name
+        fieldName = $(this).attr('data-field');
+        // Get its current value
+        var currentVal = parseInt($('input[name='+fieldName+']').val());
+        // If it isn't undefined or its greater than 0
+        if (!isNaN(currentVal) && currentVal > 0) {
+            // Decrement one
+            $('input[name='+fieldName+']').val(currentVal - 1);
+        } else {
+            // Otherwise put a 0 there
+            $('input[name='+fieldName+']').val(0);
+        }
+    });
+});
 </script>
 <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>

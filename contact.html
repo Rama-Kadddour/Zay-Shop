@@ -49,17 +49,19 @@
                 top: 25px;
                 right: 3%;
             } 
-        input{  
-            border: 0;
-            width: 2%;
+            .icon-shape {
+            background-color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            vertical-align: middle;
+            border: white 1px solid;
         }
-        nput::-webkit-outer-spin-button,
-        input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            margin: 0;
-        }
-        input:disabled{
-            background-color:white;
+        .icon-sm {
+            width: 2rem;
+            height: 2rem;
+            
         }
         .hover-success{
             color:white !important;
@@ -98,7 +100,7 @@
         </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white shadow">
         <div class="container">
             <div class="">
                 <div class="d-flex justify-content-between">
@@ -192,12 +194,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="dropdown-item row mw-100 d-flex ms-1">
@@ -214,12 +220,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="dropdown-item row mw-100 d-flex ms-1">
@@ -236,12 +246,16 @@
                                                             color:white
                                                         </div>
                                                         <div class="row mw-100">
-                                                            <div class="col-6 ">800$</div>
-                                                            <div class="col-6 qty">
-                                                                <span class="minus1">-</span>
-                                                                <input type="number" class="count" name="qty" value="1">
-                                                                <span class="plus1">+</span>
-                                                            </div>
+                                                            <div class="d-flex justify-content-between">
+                                                                <div>
+                                                                   <p class="text-dark">800$</p>
+                                                                </div>
+                                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                                   <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
+                                                                   <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                                                                   <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm " data-field="quantity">
+                                                                </div>
+                                                             </div>
                                                         </div>
                                                     </div>
                                                     <hr style="border: 3px solid rgb(17, 255, 0);">
@@ -285,7 +299,7 @@
                                                             </div>
                                                         </div>
                                                         <div class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing. saepe libero <a href="">consectetur accusamus!</a></div>
-                                                        <a class="fw-bold ms-2 " href="shop.html"><i class="fa fa-angle-left me-3 mb-4"></i> Back to shopping</a>
+                                                        <a class="fw-bold ms-2 " href="#"><i class="fa fa-angle-left me-3 mb-4"></i> Back to shopping</a>
                                                     </form>
                                                 </div>
                                             </div>
@@ -457,43 +471,39 @@
     
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script>
-        $(document).ready(function(){
-                $('.count').prop('disabled', true);
-                   $(document).on('click','.plus1',function(){
-                    $('.count').val(parseInt($('.count').val()) + 1 );
-                });
-                $(document).on('click','.minus1',function(){
-                    $('.count').val(parseInt($('.count').val()) - 1 );
-                        if ($('.count').val() == 0) {
-                            $('.count').val(1);
-                        }
-                    });
-         });
-         $(document).ready(function(){
-                $('.count').prop('disabled', true);
-                   $(document).on('click','.plus2',function(){
-                    $('.count').val(parseInt($('.count').val()) + 1 );
-                });
-                $(document).on('click','.minus2',function(){
-                    $('.count').val(parseInt($('.count').val()) - 1 );
-                        if ($('.count').val() == 0) {
-                            $('.count').val(1);
-                        }
-                    });
-         });
-         $(document).ready(function(){
-                $('.count').prop('disabled', true);
-                   $(document).on('click','.plus3',function(){
-                    $('.count').val(parseInt($('.count').val()) + 1 );
-                });
-                $(document).on('click','.minus3',function(){
-                    $('.count').val(parseInt($('.count').val()) - 1 );
-                        if ($('.count').val() == 0) {
-                            $('.count').val(1);
-                        }
-                    });
-         });
-        
+        function incrementValue(e) {
+            e.preventDefault();
+            var fieldName = $(e.target).data('field');
+            var parent = $(e.target).closest('div');
+            var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+    
+            if (!isNaN(currentVal)) {
+                parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+            } else {
+                parent.find('input[name=' + fieldName + ']').val(1);
+            }
+        }
+    
+        function decrementValue(e) {
+            e.preventDefault();
+            var fieldName = $(e.target).data('field');
+            var parent = $(e.target).closest('div');
+            var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+    
+            if (!isNaN(currentVal) && currentVal > 1) {
+                parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+            } else {
+                parent.find('input[name=' + fieldName + ']').val(1);
+            }
+        }
+    
+        $('.input-group').on('click', '.button-plus', function(e) {
+            incrementValue(e);
+        });
+    
+        $('.input-group').on('click', '.button-minus', function(e) {
+            decrementValue(e);
+        });
     </script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
