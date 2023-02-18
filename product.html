@@ -53,6 +53,9 @@
             background-color: #198754;
             color: white;
         }
+        .fullback{
+            --bs-gutter-x: 0rem;
+        }
         .cartt{
             width: 400px;
         }
@@ -304,8 +307,8 @@
             </div>
         </div>
     </nav>
-    <div class="row mw-100 bg-light">
-        <div class="col-5 pe-4">
+    <div class="row fullback mw-100 bg-light">
+        <div class="col-lg-5 col-12 pe-4">
             <div class="row ps-5 my-5">
                 <img src="assets/img/product_single_10.jpg" alt="">
             </div>
@@ -345,7 +348,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-6 my-5 bg-white">
+        <div class="col-lg-6 col-12 my-5 bg-white">
             <div class="row ms-3 mt-3">
                 <h3>Active Wear</h3>
             </div>
@@ -393,26 +396,28 @@
                 </span>
             </div>
             <div class="row ms-3 mt-3 d-flex"  style="font-size: 18px; font-weight: 400;">
-                <p class="col-1">
+                <p class="col-md-1 col-4">
                     Size:
                 </p>
-                <span class="col-4">
-                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">S</button>
-                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">M</button>
-                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">L</button>
-                    <button class="btn btn-success mx-1 px-1" style="width: 35px;">XL</button>
+                <span class="col-md-4 col-6">
+                    <button class="btn btn-success mx-lg-1 px-1" style="width: 32px;">S</button>
+                    <button class="btn btn-success mx-lg-1 mx-1 px-1" style="width: 32px;">M</button>
+                    <button class="btn btn-success mx-lg-1 mx-1 px-1" style="width: 32px;">L</button>
+                    <button class="btn btn-success mx-lg-1 px-1" style="width: 32px;">XL</button>
                 </span>
                 <!-- Change the `data-field` of buttons and `name` of input field's for multiple plus minus buttons-->
-                <p class="col-1">Quantity</p>
-                <div class="col-3 input-group w-auto justify-content-end align-items-center">
-                    <input type="button" value="-" class="btn-success1 button-minus rounded  icon-shape icon-sm mx-1 " data-field="quantity">
-                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
+                <p class="col-md-2 col-4">Quantity</p>
+                <div class="col-md-3 col-7 input-group w-auto">
+                    <input type="button" value="-" class="btn-success1 button-minus rounded  icon-shape icon-sm me-2" data-field="quantity">
+                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-white text-center me-2 mt-1 ps-1 bg-secondary" style="width: 30px; height: 25px;">
                     <input type="button" value="+" class="btn-success1 button-plus rounded icon-shape icon-sm " data-field="quantity">
                 </div>
                 
             </div>
+            <div class="row ms-3 mt-3 mb-5 mw-100 grid gap-0 column-gap-3">
+                <button class="btn btn-success btn-lg g-col-6" style="max-width: 360px;">Buy</button><button class="btn btn-success btn-lg g-col-6" style="max-width: 360px;" >Add To Cart</button>
+            </div>
         </div>
-
     </div>
 
     <footer class="bg-dark text-center">
