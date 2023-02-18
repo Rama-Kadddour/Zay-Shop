@@ -21,25 +21,13 @@
         .nav-item{
             font-weight: 400
         }
-        #gg{
-            background-color: rgb(53, 110, 53);
-        }
         .icons-nav{
             display: flex !important;
-        }
-        .carousel-control-next-icon{
-            color: rgb(53, 110, 53);
-        }
-        .carousel-control-prev-icon{
-            color: rgb(53, 110, 53);
         }
         .navbar-toggler{
                 position: absolute;
                 top: 25px;
                 right: 3%;
-        }
-        .rounded-circle{
-                max-width: 325px;
         }
         .hover-success{
             color:white !important;
@@ -74,36 +62,12 @@
         input:disabled{
             background-color:white;
         }
-
         .cartt{
             width: 400px;
         }
         @media (min-width:800px) {
             .cartt{
                 width: 730px;
-            }
-        }
-        @media (max-width:1400px) and (min-width: 1000px) {
-            .rounded-circle{
-                max-width: 265px;
-            }
-        }
-        @media (max-width:1000px) and (min-width: 760px) {
-            .rounded-circle{
-                max-width: 165px;
-            }
-        }
-        @media (max-width: 760px) {
-            .carousel-inner {
-                min-height: 765px;
-            }
-            .rounded-circle{
-                max-width: 425px;
-            }
-        }
-        @media (max-width: 500px) {
-            .rounded-circle{
-                max-width: 365px;
             }
         }
     </style>
@@ -129,7 +93,7 @@
         </div>
         </div>
     </div>
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white shadow">
         <div class="container">
             <div class="">
                 <div class="d-flex justify-content-between">
@@ -337,214 +301,96 @@
             </div>
         </div>
     </nav>
+    <div class="row bg-light">
+        <div class="col-5 pe-4">
+            <div class="row ps-5 my-5">
+                <img src="assets/img/product_single_10.jpg" alt="">
+            </div>
+            <div class="row ps-4 my-5">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="10000">
+                        <div class="d-flex">
+                            <div class="col-4"><img class="w-75 ms-5 ps-2" src="assets/img/product_single_01.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75 ms-4" src="assets/img/product_single_02.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75" src="assets/img/product_single_03.jpg" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <div class="d-flex">
+                            <div class="col-4"><img class="w-75 ms-5 ps-2" src="assets/img/product_single_03.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75 ms-4" src="assets/img/product_single_04.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75" src="assets/img/product_single_05.jpg" alt=""></div>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="d-flex">
+                            <div class="col-4"><img class="w-75 ms-5 ps-2" src="assets/img/product_single_06.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75 ms-4" src="assets/img/product_single_07.jpg" alt=""></div>
+                            <div class="col-4"><img class="w-75" src="assets/img/product_single_08.jpg" alt=""></div>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next ps-4" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 my-5 bg-white">
+            <div class="row ms-3 mt-3">
+                <h3>Active Wear</h3>
+            </div>
+            <div class="row ms-3 mt-3">
+                <h4>25.00$</h4>
+            </div>
+            <div class="ms-4 mt-3">
+                <i style="font-size: 20px;" class="fa fa-star text-warning"></i></li>
+                <i style="font-size: 20px;" class="fa fa-star text-warning"></i></li>
+                <i style="font-size: 20px;" class="fa fa-star text-warning"></i></li>
+                <i style="font-size: 20px;" class="fa fa-star text-warning"></i></li>
+                <i style="font-size: 20px;" class="fa fa-star-o text-warning"></i></li>
+                <span style="font-size: 18px;" class="ms-2">Rating 4.8 | 36 Comments</span>
+            </div>
+            <div class="row ms-3 mt-3">
+                <p style="font-size: 18px; font-weight: 700;">
+                    Brand:
+                    <span class="text-secondary">Easy Wear</span>
+                </p>
+            </div>
+            <div class="row ms-3 mt-3"  style="font-size: 18px; font-weight: 700;">
+                <p>
+                    Description:
+                </p>
+                <span style="font-weight: 500;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolores odio laudantium quis voluptate provident, minus ducimus fuga architecto beatae quos eius temporibus? Omnis, sequi sunt. Aut tempora odio dolores!</span>
+            </div>
+            <div class="row ms-3 mt-3">
+                <p style="font-size: 18px; font-weight: 700;">
+                    Available Color:
+                    <span class="text-secondary">White / Black</span>
+                </p>
+            </div>
+            <div class="row ms-3 mt-3"  style="font-size: 18px; font-weight: 700;">
+                <p>
+                    Specification:
+                </p>
+                <span style="font-weight: 500;">
+                    Lorem ipsum dolor sit <br>
+                    Amet, consectetur <br>
+                    Adipiscing elit,set <br>
+                    Duis aute irure <br>
+                    Ut enim ad minim <br>
+                    Dolore magna aliqua <br>
+                    Excepteur sint <br>
+                </span>
+            </div>
+        </div>
 
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"></li>
-            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"></li>
-            <li id="gg" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner"  style="height: 685px; background-color: #EFEFEF;">
-            <div class="carousel-item active">
-                <div class="container" >
-                    <div class="row p-5">
-                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_01.jpg"></div>
-                        <div class="col-lg-6 col-md-12 d-flex col-sm-12 ">
-                            <div class="text-start mt-lg-5 pt-lg-5">
-                                <h1 class="text-success mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;"> <b style="font-weight: 300;">Zay</b> eCommerce</h1>
-                                <div style="font-size: 18px; font-weight: 300;">
-                                    <span style="font-weight: 300; font-size: 28px;" >Tiny and Perfect eCommerce Template</span><br>
-                                        Zay Shop is an eCommerce HTML5 CSS template with latest version of Bootstrap 5 (beta 1). This template is 100% free provided by <a href="#" class="text-success" style="text-decoration: underline;">TemplateMo</a>  website. Image credits go to <a href="#" class="text-success" style="text-decoration: underline;">Freepik Stories</a> , Unsplash and <a href="#" class="text-success" style="text-decoration: underline;">Icons 8</a>.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container" >
-                    <div class="row p-5">
-                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_02.jpg"></div>
-                        <div class="col-lg-6 col-md-12 d-flex col-sm-12">
-                            <div class="text-start mt-lg-5 pt-lg-5">
-                                <h1 class="mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;">Proident occaecat</h1>
-                                <div style="font-size: 18px; font-weight: 400;">
-                                    <span style="font-weight: 300; font-size: 28px;" >Aliquip ex ea commodo consequat</span><br>
-                                    You are permitted to use this Zay CSS template for your commercial websites. You are <b>not permitted</b> to re-distribute the template ZIP file in any kind of template collection websites.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="container" >
-                    <div class="row p-5">
-                        <div class="mx-auto col-lg-6 col-md-8 col-sm-12 order-lg-2"><img class="img-fluid" src="assets/img/banner_img_03.jpg"></div>
-                        <div class="col-lg-6 col-md-12 d-flex col-sm-12">
-                            <div class="text-start mt-lg-5 pt-lg-5">
-                                <h1 class="mt-lg-5 pt-lg-5" style="font-weight: 200; font-size: 50px;">Repr in voluptate</h1>
-                                <div style="font-size: 18px; font-weight: 400;">
-                                    <span style="font-weight: 300; font-size: 28px;" >Ullamco laboris nisi ut</span><br>
-                                    We bring you 100% free CSS templates for your websites. If you wish to support TemplateMo, please make a small contribution via PayPal or tell your friends about our website. Thank you.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="row mw-100 my-5 text-center ps-3 justify-content-center">
-        <h2 class="col-lg-11" style="font-weight: 200; font-size: 50px;">Categories of The Month</h2>
-        <p style="font-size: 19px;" class="col-lg-6 mx-auto">Excepteur sint occaecat cupidatat non proident,sunt in culpa qui officia deserunt
-            mollit anim id est laborum.
-        </p>
-    </div>
-    <div class="row text-center mw-100 ps-4">
-        <div class="col-md-4 col-sm-12">
-            <img class="rounded-circle responsive" src="assets/img/category_img_01.jpg" alt="">
-            <p class="mt-4" style="font-size: 22px; font-weight: 600;">Watches</p>
-            <button class="btn btn-success rounded my-3">Go Shop</button>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <img class="rounded-circle responsive" src="assets/img/category_img_02.jpg" alt="">
-            <p class="mt-4" style="font-size: 22px; font-weight: 600;">Shoes</p>
-            <button class="btn btn-success rounded my-3">Go Shop</button>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <img class="rounded-circle responsive" src="assets/img/category_img_03.jpg" alt="">
-            <p class="mt-4" style="font-size: 22px; font-weight: 600;">Accessories</p>
-            <button class="btn btn-success rounded my-2">Go Shop</button>
-        </div>
-    </div>
-    <div class="pb-5 bg-light ps-4">
-        <div class="row mw-100 text-center pt-5">
-            <h2 class="col-lg-12" style="font-weight: 200; font-size: 50px;">Featured Product</h2>
-            <p style="font-size: 19px;" class=" text-break col-lg-6 mx-auto">Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
-        </div>
-        <div class="row mw-100 mb-5 px-lg-5 justify-content-center">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col-md-4">
-                    <div class="card h-100  ">
-                        <a href="product.html"><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6 float-start">
-                                    <div class="float-start d-flex">
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="float-end lead text-muted">
-                                        $240.00
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="">
-                                    <a href="product.html" class="card-title h3">Gym Weight </a>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="" style="font-size: 20px;">
-                                    <p class="card-text float-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.</p>
-                                </div>
-                            </div>
-                            <div class="row float-start lead text-muted ms-1 my-4 mb-5">
-                                Reviews (24)
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 ms-sm-4">
-                        <a href="product.html"><img src="assets/img/feature_prod_02.jpg" class="card-img-top " alt=""></a>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6 float-start">
-                                    <div class="float-start d-flex">
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="float-end lead text-muted">
-                                        $480.00
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="">
-                                    <a href="product.html" class="card-title h3">Cloud Nike Shoes</a>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="" style="font-size: 20px;">
-                                    <p class="card-text float-start">LAenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.</p>
-                                </div>
-                            </div>
-                            <div class="row float-start lead text-muted ms-1 my-4 mb-5">
-                                Reviews (48)
-                            </div>
-                        </div>
-                        </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 ms-sm-4">
-                        <a href="product.html"><img src="assets/img/feature_prod_01.jpg" class="card-img-top " alt=""></a>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-sm-6 float-start">
-                                    <div class="float-start d-flex">
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                        <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <h4 class="float-end lead text-muted">
-                                        $360.00
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="">
-                                    <a href="product.html" class="card-title h3">Summer Addides Shoes</a>
-                                </div>
-                            </div>
-                            <div class="row float-start">
-                                <div class="" style="font-size: 20px;">
-                                    <p class="card-text float-start">Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.</p>
-                                </div>
-                            </div>
-                            <div class="row float-start lead text-muted ms-1 my-4 mb-5">
-                                Reviews (74)
-                            </div>
-                        </div>
-                        </div>
-                </div>
-            </div>
-        </div>
     </div>
 
     <footer class="bg-dark text-center">
