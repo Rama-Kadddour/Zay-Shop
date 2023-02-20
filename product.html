@@ -9,6 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous"
+    />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
         a{
@@ -65,9 +69,49 @@
             background-color: #198754;
         }
         .size:focus{
+            color: white;
             background-color: rgb(93, 93, 93);
         }
-        .cartt{
+        .owl-nav{
+            display: none;
+        }
+        .owl-dots{
+            margin-top: 20px;
+        }
+        .item .box {
+        background-position:center;
+        position:relative;
+        overflow:hidden;
+        height: 600px;
+        }
+
+        .item .cover {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width:100%;
+        height:100%;
+        transition:opacity 0.2s ease-in;
+        opacity:0;
+        padding-top:47%;
+        padding-left: 45%;
+        }
+
+        .item:hover .cover {
+        opacity:1;
+        }
+
+        .fab{
+            font-size: 22px;
+            color: white;
+        }
+        .social a {
+        color:inherit;
+        }
+        .social a:hover {
+        opacity:1;
+        }
+       .cartt{
             width: 400px;
         }
         @media (min-width:800px) {
@@ -420,17 +464,517 @@
                 <p class="col-md-2 col-4">Quantity</p>
                 <div class="col-md-3 col-7 input-group w-auto">
                     <input type="button" value="-" class="btn-success1 button-minus rounded  icon-shape icon-sm me-2" data-field="quantity">
-                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-white text-center me-2 mt-1 ps-1 bg-secondary" style="width: 30px; height: 25px;">
+                    <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-white text-center ps-2 me-2 mt-1 bg-secondary" style="width: 38px; height: 25px;">
                     <input type="button" value="+" class="btn-success1 button-plus rounded icon-shape icon-sm " data-field="quantity">
                 </div>
-                
             </div>
             <div class="row ms-3 mt-3 mb-5 mw-100 grid gap-0 column-gap-3">
                 <button class="btn btn-success btn-lg g-col-6" style="max-width: 360px;">Buy</button><button class="btn btn-success btn-lg g-col-6" style="max-width: 360px;" >Add To Cart</button>
             </div>
         </div>
     </div>
-
+    <div class="row bg-white my-5 mx-5 px-5">
+        <h3 class="mb-4">Related Products</h3>
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="card mb-4 ">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_08.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_09.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_02.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_11.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_11.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_08.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_09.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_02.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_02.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_11.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_08.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_09.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_08.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_09.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_02.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card mb-4">
+                    <img class="mw-100 mh-100 card-img-top" src="assets/img/shop_11.jpg" alt="">
+                    <div class="cover">
+                        <div class="social d-block">
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-heart"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block my-2 btn-sm">
+                                <a href="#"><i class="bi bi-eye"></i></a><br>
+                            </button>
+                            <button class="btn btn-success d-block btn-sm">
+                                <a href="#"><i class="bi bi-cart-plus-fill"></i></a><br>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p style="font-size: 20px;">Oupidatat non <br>
+                            M/L/X/XL
+                        </p>
+                        <div class="text-center ">
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                            <li class="list-inline-item text-warning"><i class="fa fa-star-o"></i></li>
+                        </div>
+                        <p style="font-size: 20px;" class="text-center mt-2">250$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <footer class="bg-dark text-center">
         <div class="ms-5 p-4">
             <section class="">
@@ -570,44 +1114,34 @@
         decrementValue(e);
     });
 </script>
-<script>
-    jQuery(document).ready(function(){
-    // This button will increment the value
-    $('[data-quantity="plus"]').click(function(e){
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        fieldName = $(this).attr('data-field');
-        // Get its current value
-        var currentVal = parseInt($('input[name='+fieldName+']').val());
-        // If is not undefined
-        if (!isNaN(currentVal)) {
-            // Increment
-            $('input[name='+fieldName+']').val(currentVal + 1);
-        } else {
-            // Otherwise put a 0 there
-            $('input[name='+fieldName+']').val(0);
-        }
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<!-- Owl Carousel -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- custom JS code after importing jquery and owl -->
+<script type="text/javascript">
+    $(document).ready(function() {
+        $(".owl-carousel").owlCarousel();
     });
-    // This button will decrement the value till 0
-    $('[data-quantity="minus"]').click(function(e) {
-        // Stop acting like a button
-        e.preventDefault();
-        // Get the field name
-        fieldName = $(this).attr('data-field');
-        // Get its current value
-        var currentVal = parseInt($('input[name='+fieldName+']').val());
-        // If it isn't undefined or its greater than 0
-        if (!isNaN(currentVal) && currentVal > 0) {
-            // Decrement one
-            $('input[name='+fieldName+']').val(currentVal - 1);
-        } else {
-            // Otherwise put a 0 there
-            $('input[name='+fieldName+']').val(0);
+
+    $('.owl-carousel').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            }
         }
-    });
-});
+    })
 </script>
+
 <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
